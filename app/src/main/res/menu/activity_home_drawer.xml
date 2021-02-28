@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="@string/beranda"
+            android:fontFamily="@font/muli_semibold"/>
+    </group>
+
+    <item android:title="Pengamatan">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_harian_kel"
+                    android:icon="@drawable/ic_camera_alt_black_24dp"
+                    android:title="@string/harian_keliling"
+                    android:fontFamily="@font/muli_semibold"/>
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Pelaporan OPT">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_harian"
+                    android:icon="@drawable/ic_camera_alt_black_24dp"
+                    android:title="@string/harian"
+                    android:fontFamily="@font/muli_semibold"/>
+                <item
+                    android:id="@+id/nav_stgh_bln"
+                    android:icon="@drawable/ic_camera_alt_black_24dp"
+                    android:title="@string/setengah_bulanan"
+                    android:fontFamily="@font/muli_semibold"/>
+
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Laporan Kumulatif">
+        <menu>
+
+            <group android:checkableBehavior="single">
+<!--                <item-->
+<!--                    android:id="@+id/nav_lap_harian"-->
+<!--                    android:icon="@drawable/ic_assignment_black_24dp"-->
+<!--                    android:title="@string/harian"-->
+<!--                    android:fontFamily="@font/muli_semibold"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_lapor"-->
+<!--                    android:icon="@drawable/ic_assignment_black_24dp"-->
+<!--                    android:title="@string/setengah_bulanan"-->
+<!--                    android:fontFamily="@font/muli_semibold"/>-->
+                <item
+                    android:id="@+id/nav_laporan"
+                    android:fontFamily="sans-serif"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="@string/bulanan" />
+                <item
+                    android:id="@+id/nav_musiman"
+                    android:fontFamily="sans-serif"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="@string/musiman" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Stock">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stock"
+                    android:icon="@drawable/ic_storage_black_24dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:title="@string/stock_pestisida" />
+                <item
+                    android:id="@+id/nav_stock_alat"
+                    android:icon="@drawable/ic_storage_black_24dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:title="@string/stock_alat" />
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

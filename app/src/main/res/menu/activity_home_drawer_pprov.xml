@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="@string/beranda"
+            android:fontFamily="@font/muli_semibold"/>
+    </group>
+
+    <item android:title="Monitoring">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:fontFamily="@font/muli_semibold"
+                    android:id="@+id/nav_monitoring"
+                    android:icon="@drawable/ic_remove_red_eye_black_24dp"
+                    android:title="@string/monitoring" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Validasi">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:fontFamily="@font/muli_semibold"
+                    android:id="@+id/nav_approval"
+                    android:icon="@drawable/ic_assignment_turned_in_black_24dp"
+                    android:title="@string/harian" />
+                <item
+                    android:fontFamily="@font/muli_semibold"
+                    android:id="@+id/nav_approval_stgh"
+                    android:icon="@drawable/ic_assignment_turned_in_black_24dp"
+                    android:title="@string/setengah_bulanan" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Hasil Laporan">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_laporan"
+                    android:fontFamily="sans-serif"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="@string/bulanan" />
+                <item
+                    android:id="@+id/nav_hujan"
+                    android:fontFamily="sans-serif"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="@string/musiman" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Stock">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stock"
+                    android:icon="@drawable/ic_storage_black_24dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:title="@string/stock" />
+                <item
+                    android:id="@+id/nav_stock_alat"
+                    android:icon="@drawable/ic_storage_black_24dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:title="@string/stock" />
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

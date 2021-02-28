@@ -1,0 +1,351 @@
+<resources>
+    <string name="app_name">Siap Opa</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="petugas_opt">Petugas OPT</string>
+    <string name="petugas_kabupaten">Petugas Kabupaten</string>
+    <string name="petugas_provinsi">Petugas Provinsi</string>
+    <string name="satuan_pelaksana">Satuan Pelaksana</string>
+    <string name="password">Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lapor">Lapor</string>
+    <string name="laporan">Laporan</string>
+    <string name="wilayah">Wilayah</string>
+    <string name="profil">Profil</string>
+    <string name="logout">Logout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="approval">Approval</string>
+    <string name="desa_kecamatan">Desa/Kecamatan</string>
+    <string name="umur_tanaman">Umur Tanam (HST)</string>
+    <string name="luas_terserang">Luas Terserang</string>
+    <string name="kepadatan_populasi">Kepadatan Populasi</string>
+    <string name="luas_waspada">Luas Waspada</string>
+    <string name="rekomendasi_pengendalian">Isi Rekomendasi Pengendalian</string>
+    <string name="clear">clear</string>
+    <string name="save">Save</string>
+    <string name="tanda_tangan">Tanda Tangan</string>
+    <string name="input_signature">Input Signature</string>
+    <string name="agreement">I agree the terms and conditions.</string>
+    <string name="clear_pad">Clear Pad</string>
+    <string name="save_signature">Save Signature</string>
+    <string name="bukti_foto">Bukti(Foto)</string>
+    <string name="signature">Signature</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="stock">Stock</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="latitude_langitude">Latitude, Langitude</string>
+    <string name="input_lokasi">Input Lokasi</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="tidak_ada_dokumen">Tidak ada dokumen</string>
+    <string name="select_file">Select File</string>
+    <string name="surat_rekomendasi">Surat Rekomendasi</string>
+    <string name="buat_laporan">Buat Laporan</string>
+    <string name="status_approval">Status Approval</string>
+    <string name="surat_rekomendasi_pdf">Surat Pengantar.pdf</string>
+    <string name="download">Download</string>
+    <string name="approve">Approve</string>
+    <string name="bandung_20_september_2020">Bandung, 20 September 2020</string>
+    <string name="dinda_majesty">Dinda Majesty</string>
+    <string name="stock_awal_bulan">Stock Awal Bulan</string>
+    <string name="tambahan">Tambahan</string>
+    <string name="penggunaan">Penggunaan</string>
+    <string name="stock_akhir_bulan">Stock Akhir Bulan</string>
+    <string name="input_stock">Input Stock</string>
+    <string name="input_stock_pestisida">Input Stock Pestisida</string>
+    <string name="liter">Liter</string>
+    <string name="laporan_stock">Laporan Stock</string>
+    <string name="sisa_serangan">Sisa Serangan</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="kabupaten">Kabupaten</string>
+    <string name="kecamatan">Kec</string>
+    <string name="desa">Desa</string>
+    <string name="save_data_lokasi">Save Data Lokasi</string>
+    <string name="input_data_laporan">Input Data Laporan</string>
+    <string name="luas_tanaman">L Tanaman</string>
+    <string name="luas_sembuh">L Sembuh</string>
+    <string name="luas_panen">L Panen</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="tambah_serangan">Tambah Serangan</string>
+    <string name="luas_tambah_serangan">Luas Tambah</string>
+    <string name="intensitas">Intensitas</string>
+    <string name="luas_pengendalian">Luas Pengendalian</string>
+    <string name="pm">PM</string>
+    <string name="jumlah_pestisida">Jumlah Pestisida</string>
+    <string name="jumlah_non_pestisida">Jumlah Non Pestisida</string>
+    <string name="keadaan_serangan">Keadaan Serangan</string>
+    <string name="frekuensi_pengendalian">Frekuensi Pengendalian</string>
+    <string name="jumlah_pengendalian">Jumlah Pengendalian</string>
+    <string name="kimia">Kimia</string>
+    <string name="nabati">Nabati</string>
+    <string name="pestisida">Pestisida</string>
+    <string name="non_pestisida">Non Pestisida</string>
+    <string name="jumlah_cl">Jumlah CL</string>
+    <string name="jumlah_ah">Jumlah AH</string>
+    <string name="jumlah_nabati">Jumlah Nabati</string>
+    <string name="jumlah_kimia">Jumlah Kimia</string>
+    <string name="data_inserted">Data Inserted</string>
+    <string name="luas_sisa_serangan_pada_periode_laporan">Luas Sisa Serangan Pada Periode Laporan</string>
+    <string name="luas_tambah_serangan_pada_periode_laporan">Luas Tambah Serangan Pada Periode Laporan</string>
+    <string name="frekuensi_pengendalian_pestisida">Frekuensi Pengendalian Pestisida</string>
+    <string name="luas_keadaan_serangan_pada_periode_laporan">Luas Keadaan Serangan Pada Periode Laporan</string>
+    <string name="harian_keliling">Harian Keliling</string>
+    <string name="blok">Blok</string>
+    <string name="luas_hamparan">L Pertanaman</string>
+    <string name="luas_diamati">L Diamati</string>
+    <string name="luas_persemaian">L Persemaian</string>
+    <string name="ph_tanah">PH Tanah</string>
+    <string name="komoditas">Komoditas</string>
+    <string name="pola_tanam">Pola Tanam</string>
+    <string name="petugas_pengamatan">Petugas POPT</string>
+    <string name="detail_hasil_harian_keliling">Detail Hasil Harian Keliling</string>
+    <string name="varietas">Varietas</string>
+    <string name="jumlah_anakan">Jumlah Anakan</string>
+    <string name="pbp">PBP</string>
+    <string name="tikus">Tikus</string>
+    <string name="ganjur">Ganjur</string>
+    <string name="tungro">Tungro</string>
+    <string name="kh_kr">KH/KR</string>
+    <string name="bp">BP</string>
+    <string name="n_blas">N.Blas</string>
+    <string name="blb">BLB</string>
+    <string name="brs">BRS</string>
+    <string name="wbc">WBC</string>
+    <string name="blas">Blas</string>
+    <string name="imago">Imago</string>
+    <string name="nimfa">Nimfa</string>
+    <string name="wpp">WPP</string>
+    <string name="wdh">WDH</string>
+    <string name="ug">UG</string>
+    <string name="opms">OPMS</string>
+    <string name="domi">Domi</string>
+    <string name="kisar">Kisar</string>
+    <string name="luas_spot_hopperburn">Luas Spot Hopperburn</string>
+    <string name="intensitas_tidak_mutlak">Intensitas Serangan Tidak Mutlak</string>
+    <string name="intensitas_serangan_mutlak">Intensitas Serangan Mutlak</string>
+    <string name="populasi_opt_ekor_rumpun">Populasi OPT(Ekor/Rumpun)</string>
+    <string name="kr">KR</string>
+    <string name="kt">KT</string>
+    <string name="populasi_ma">Populasi MA</string>
+    <string name="pembelahan">Pembelahan</string>
+    <string name="simpan_data">Simpan Data</string>
+    <string name="ambil_foto">Ambil Foto</string>
+    <string name="harian">Harian</string>
+    <string name="periode_pengamatan">Periode Pengamatan</string>
+    <string name="luas_sisa_serangan">Luas Sisa Serangan</string>
+    <string name="eradikasi">Eradikasi</string>
+    <string name="cara_lain">Cara Lain</string>
+    <string name="intensitas_serangan">Intensitas Serangan</string>
+    <string name="input_data_harian_keliling">Input Data Harian Keliling</string>
+    <string name="frekuensi_kimia">Frekuensi Kimia</string>
+    <string name="frekuensi_nabati">Frekuensi Nabati</string>
+    <string name="jenis_opt">OPT</string>
+    <string name="ringan">Ringan</string>
+    <string name="sedang">Sedang</string>
+    <string name="berat">Berat</string>
+    <string name="puso">Puso</string>
+    <string name="simpan_laporan">Simpan Laporan</string>
+    <string name="laporkan">Laporkan</string>
+    <string name="catatan">Catatan</string>
+    <string name="tambah_opt">Tambah Skor/Skala (Tidak Mutlak)</string>
+    <string name="cancel">Cancel</string>
+    <string name="laporan_setengah_bulan">Laporan Setengah Bulan</string>
+    <string name="sasaran_opt">Sasaran OPT</string>
+    <string name="surat">Surat</string>
+    <string name="nip">NIP</string>
+    <string name="nama">Nama</string>
+    <string name="tahun">Tahun</string>
+    <string name="bulan">Bulan</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="lokasi_koordinator">Lokasi Koordinator</string>
+    <string name="nama_koordinator">Nama Koordinator</string>
+    <string name="lokasi_mantan">Lokasi Mantan</string>
+    <string name="nama_mantan">Nama Mantan</string>
+    <string name="lokasi_pengamatan">Lokasi Pengamatan</string>
+    <string name="bptph_lphp_lah">BPTPH/LPHP/LAH</string>
+    <string name="intensitas_serangan_tidak_mutlak">Intensitas Serangan Tidak Mutlak</string>
+    <string name="approval_satpel">Approval Satpel</string>
+    <string name="approval_kab">Approval Kab</string>
+    <string name="kirim">Kirim</string>
+    <string name="beranda">Beranda</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="status_approval_kabupaten">Status Approval Kabupaten</string>
+    <string name="status_approval_satpel">Status Approval Satpel</string>
+    <string name="harian_keliling_popt">Harian Keliling POPT</string>
+    <string name="input_data_opt">Input Data OPT</string>
+    <string name="surat_pengantar">Surat Pengantar</string>
+    <string name="opt_mutlak">OPT Mutlak</string>
+    <string name="opt_tidak_mutlak">OPT Tidak Mutlak</string>
+    <string name="alamat">Alamat</string>
+    <string name="peringkat_opt">Peringkat OPT</string>
+    <string name="nama_produk">Nama Produk</string>
+    <string name="tolak">Tolak</string>
+
+    <string name="logo_name">Siap Opa Jabar</string>
+    <string name="slogan_name">Aplikasi Pelaporan OPT di Jawa Barat</string>
+    <string name="powered_by">Powered By Taimoor Sikander</string>
+
+
+    <!--  Todo: Strings for On Boarding Screen  -->
+
+    <!--Titles-->
+    <string name="first_slide_title">Search Your Location</string>
+    <string name="second_slide_title">Make A Call</string>
+    <string name="third_slide_title">Add Missing Place</string>
+    <string name="fourth_slide_title">Sit Back And Enjoy</string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">You can search any place nearby or with-in the specified city. We will display specific or all related shops to match your search. </string>
+    <string name="second_slide_desc">We provide almost all the numbers of all departments and shops registered with us. You can perform bookings as well.</string>
+    <string name="third_slide_desc">If you have a shop or somethings and want to be a part of our growing industry then add your place by follwing simple steps.</string>
+    <string name="fourth_slide_desc">We will handle everything for you. As you have the app in your pocket then you don\'t have to worry about anything.  </string>
+
+    <!--Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+
+
+    <!--   TODO:Strings for Dashboard    -->
+
+    <!--  Categories  -->
+    <string name="hotels">Hotels</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="shops">Shops</string>
+    <string name="banks">Banks</string>
+    <string name="airports">Airports</string>
+    <string name="education">Education</string>
+    <string name="hospitals">Hospitals</string>
+
+    <!--  Titles and Descriptions  -->
+    <string name="featured_locations">All Featured Locations</string>
+    <string name="featured_locations_description">All the locations that are featured and have the top demand in town!</string>
+    <string name="most_viewed_locations">Most Viewed</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="search_text">Search...</string>
+
+
+    <!--   TODO: Menu Names     -->
+
+    <!--     General Menu names     -->
+    <string name="home">HOME</string>
+    <string name="search">SEARCH</string>
+    <string name="all_categories">ALL CATEGORIES</string>
+    <string name="add_missing_place">ADD MISSING PLACE</string>
+    <string name="profile">Profile</string>
+    <string name="share">Share</string>
+    <string name="rate_us">Rate Us</string>
+
+    <!--     All Categories Menu names     -->
+    <string name="expand_all">Expand All</string>
+    <string name="car_rent">Car Rent</string>
+    <string name="all_shops">All Shops</string>
+
+
+    <!-- TODO: Retailer Panel Strings -->
+
+    <!--  General Strings  -->
+    <string name="sign_up">Sign Up</string>
+    <string name="retailer_heading">Grow\nYour Business</string>
+    <string name="retailer_tag_line">We will help you to grow your business using online services!</string>
+    <string name="create_account">Create\nAccount</string>
+    <string name="how_we_work">How we work?</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Lupa Password</string>
+
+    <!--  Field Strings  -->
+    <string name="enter_full_name">Full Name</string>
+    <string name="enter_username">Username</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_phone_number">Phone Number</string>
+    <string name="enter_password">Password</string>
+
+
+    <!--   OTP Screen -->
+    <string name="otp_code_text">Co\nde</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter one time password sent on\n+923332225522</string>
+
+
+    <!--   Reset Password -->
+    <string name="new_credentials">New\nCredentials</string>
+    <string name="new_credentials_detail">Your identity has been verified!\nSet your new password</string>
+    <string name="forget_password_detail">Provide your account\'s email for which you want to reset your password!</string>
+    <string name="password_updated">Password\nUpdated</string>
+    <string name="password_updated_success_message">your password has been updated!</string>
+    <string name="make_selection">Make\nSelection</string>
+    <string name="make_selection_detail">Select which contact detail should we use to reset your password?</string>
+    <string name="via_sms">via sms:</string>
+    <string name="via_mail">via mail:</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="tambahkan_rumpun">Tambah Rumpun</string>
+    <string name="rumpun">Rumpun</string>
+    <string name="permintaan_stock">Permohonan Stock</string>
+    <string name="simpan">Simpan</string>
+    <string name="musuh_alami">Musuh Alami</string>
+    <string name="jumlah_musuh_alami">Jumlah Musuh Alami</string>
+    <string name="lokasi_kepala_dinas">Lokasi Kepala Dinas</string>
+    <string name="data_stock_pestisida">Data Stock Pestisida</string>
+    <string name="data_serangan_opt">Data Serangan OPT</string>
+    <string name="maps_detail">Maps Detail</string>
+    <string name="ktp">KTP</string>
+    <string name="lampiran">Lampiran</string>
+    <string name="kartu_disposisi">Kartu Disposisi</string>
+    <string name="aplikasi_pelaporan_opt_di_wilayah_jawa_barat">Aplikasi Pelaporan OPT di Wilayah Jawa Barat</string>
+    <string name="setengah_bulanan">Setengah Bulanan</string>
+    <string name="bulanan">Bulanan</string>
+    <string name="musim_hujan">Musim Hujan</string>
+    <string name="musim_kemarau">Musim Kemarau</string>
+    <string name="stock_pestisida">Stock Pestisida</string>
+    <string name="stock_alat">Stock Alat</string>
+    <string name="data_opt">Data OPT</string>
+    <string name="data_hasil_perhitungan_opt">Hasil Perhitungan OPT</string>
+    <string name="cetak_laporan">Lihat Laporan</string>
+    <string name="musim_tanam">Musim Tanam</string>
+    <string name="menu_ini_tersedia_pada_tanggal_14_15_dan_tanggal_28_31">Menu ini tersedia pada tanggal 14-15 dan tanggal 28-31</string>
+    <string name="catatan_untuk_popt">Catatan untuk POPT</string>
+    <string name="mohon_maaf">Mohon Maaf</string>
+    <string name="menu_ini_dalam_tahap_pengembangan">Menu ini dalam tahap pengembangan</string>
+    <string name="dari_tanggal">dari tanggal</string>
+    <string name="hingga_tanggal">hingga tanggal</string>
+    <string name="musiman">Musiman</string>
+    <string name="hasil_inputan_data">Hasil Inputan</string>
+    <!--    <string name="rumpun_tunak_rusak_mutlak">Rumpun/Tunas Rusak (Mutlak)</string>-->
+    <string name="rumpun_tunak_rusak_tidak_mutlak">Skor/Skala (Tidak Mutlak)</string>
+    <string name="tambah_data_rumpun">Tambah Rumpun/Tunas Rusak (Mutlak)</string>
+    <string name="tambah_populasi_opt_ekor_rumpun">Tambah Populasi OPT(Ekor/Rumpun)</string>
+    <string name="tambah_populasi_ma">Tambah Populasi MA</string>
+    <string name="rumpun_tunas_rusak_mutlak">Rumpun/Tunas Rusak (Mutlak)</string>
+    <string name="pilih_salah_satu_opt_untuk_dilaporkan">Pilih salah satu OPT untuk dilaporkan</string>
+    <string name="tambah_populasi_opt_ekor_m">Tambah Populasi OPT (ekor/m²)</string>
+    <string name="populasi_opt_ekor_m">Populasi OPT (ekor/m²)</string>
+    <string name="cek_data">Cek Data</string>
+    <string name="edit">Edit</string>
+    <string name="submit">Submit</string>
+    <string name="status_pelaporan">Status</string>
+    <string name="lihat_laporan">Lihat Laporan</string>
+    <string name="rekomendasi_peng">Rekomendasi Pengendalian</string>
+    <string name="lihat">Lihat</string>
+    <string name="luas_tambah_serang">Luas Tambah Serangan</string>
+    <string name="luas_sisa_serangan_periode_sebelumnya">Luas Sisa Serangan (Periode Sebelumnya)</string>
+    <string name="silahkan_login_untuk_mengakses_data">Silahkan Login Untuk Mengakses Data</string>
+    <string name="pelaporan">Pelaporan</string>
+    <string name="validasi_kortikab">Validasi Kortikab</string>
+    <string name="validasi_satpel">Validasi Satpel</string>
+    <string name="validasi_bptph">Validasi BPTPH</string>
+    <string name="pemberitahuan">Pemberitahuan</string>
+    <string name="pengamatan">Pengamatan</string>
+    <string name="klik_untuk_melihat_detail_pemberitahuan_laporan">Klik untuk melihat detail pemberitahuan laporan</string>
+    <string name="data_kumulatif_luas_perkecamatan">Kumulatif LTS (Kecamatan)</string>
+    <string name="kumulatif_lks_rsbp">Kumulatif LTS (RSBP)</string>
+    <string name="kumulatif_lks_perkabupaten">Kumulatif LTS (Kabupaten)</string>
+    <string name="laporan_periode_sebelumnya">Laporan Periode Sebelumnya</string>
+    <string name="luas_keadaan_serangan">Luas Keadaan Serangan</string>
+    <string name="rekomendasi">Rekomendasi Pengendalian:</string>
+    <string name="inten_popul">Inten/Popul</string>
+</resources>

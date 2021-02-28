@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "408032334414",
+    "firebase_url": "https://siapopah.firebaseio.com",
+    "project_id": "siapopa",
+    "storage_bucket": "siapopah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408032334414:android:bb7b078296e2e088a9e91f",
+        "android_client_info": {
+          "package_name": "com.majesty.siapopa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408032334414-kf3skm0g1h8ej4mldrgh9vamra5ntvc6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.majesty.siapopa",
+            "certificate_hash": "2c579a20f782f37c160cd1753a9f530802f294cd"
+          }
+        },
+        {
+          "client_id": "408032334414-mf3ncqphp6otms508o6fa4rudv9sq3qt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHXKpM-9eSgvV8wWZ2sPB09bG7S_Tiy8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408032334414-mf3ncqphp6otms508o6fa4rudv9sq3qt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

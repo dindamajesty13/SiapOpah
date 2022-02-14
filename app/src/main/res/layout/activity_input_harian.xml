@@ -43,6 +43,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text" />
 
+        <Spinner
+            android:id="@+id/spKecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spTanaman" />
+
+
 
         <Spinner
             android:id="@+id/spDesa"
@@ -54,7 +67,7 @@
             android:spinnerMode="dropdown"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spTanaman"/>
+            app:layout_constraintTop_toBottomOf="@+id/spKecamatan"/>
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/edtBlok"

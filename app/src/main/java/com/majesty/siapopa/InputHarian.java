@@ -30,6 +30,7 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -58,6 +59,7 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
+import com.google.gson.JsonIOException;
 import com.majesty.siapopa.model.SessionManager;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
@@ -76,13 +78,15 @@ import java.util.Map;
 
 public class InputHarian extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
     String encodedImage;
-    Spinner spDesa, spTanaman;
+    Spinner spDesa, spTanaman, spKecamatan;
     MaterialEditText edtBlok, edtLuas_Hamparan, edtLuas_Diamati, edtLuas_Panen, edtLuas_Persemaian,
             edtPH, edtVarietas, edtDari_Umur, edtHingga_Umur, edtPola_Tanam;
     ArrayList<String> jenis_tanaman = new ArrayList<>();
     ArrayAdapter<String> tanamanAdapter;
     ArrayList<String> jenis_desa = new ArrayList<>();
+    ArrayList<String> jenis_kecamatan = new ArrayList<>();
     ArrayAdapter<String> desaAdapter;
+    ArrayAdapter<String> kecamatanAdapter;
     RequestQueue requestQueue;
     private static final int MY_LOCATION_PERMISSION_CODE = 99;
     private static final int CAMERA_REQUEST = 1888;
@@ -100,6 +104,7 @@ public class InputHarian extends AppCompatActivity implements GoogleApiClient.Co
     Bitmap signatureBitmap;
     String encodedSignature;
     String userAlamat;
+    String userKab;
     ProgressDialog progressDialog;
     private Calendar calendar;
     private SimpleDateFormat dateFormat;
@@ -151,6 +156,7 @@ public class InputHarian extends AppCompatActivity implements GoogleApiClient.Co
 //        btn_add = (ImageView) findViewById(R.id.btn_add);
         spDesa = (Spinner) findViewById(R.id.spDesa);
         spTanaman = (Spinner) findViewById(R.id.spTanaman);
+        spKecamatan = (Spinner) findViewById(R.id.spKecamatan);
         edtBlok = (MaterialEditText) findViewById(R.id.edtBlok);
         edtLuas_Hamparan = (MaterialEditText) findViewById(R.id.edtLuas_Hamparan);
         edtLuas_Diamati = (MaterialEditText) findViewById(R.id.edtLuas_Diamati);
@@ -223,9 +229,10 @@ public class InputHarian extends AppCompatActivity implements GoogleApiClient.Co
         });
         requestQueue.add(jsonObjectRequest);
 
+
         userAlamat = Common.currentUser.getAlamat();
-        String userKab = Common.currentUser.getKabupaten();
-        String url1 = Constants.ROOT_URL + "Populate_Desa?kecamatan=" + userAlamat + "&kabupaten=" + userKab;
+        userKab = Common.currentUser.getKabupaten();
+        String url1 = Constants.ROOT_URL + "Populate_Kecamatan?kecamatan=" + userAlamat + "&kabupaten=" + userKab;
 
         JsonObjectRequest jsonObjectRequest1 = new JsonObjectRequest(Request.Method.GET, url1, null, new Response.Listener<JSONObject>() {
             @Override
@@ -234,11 +241,48 @@ public class InputHarian extends AppCompatActivity implements GoogleApiClient.Co
                     JSONArray jsonArray = response.getJSONArray("lokasi");
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
-                        String desa = jsonObject.optString("desa");
-                        jenis_desa.add(desa);
-                        desaAdapter = new ArrayAdapter<>(InputHarian.this, android.R.layout.simple_dropdown_item_1line, jenis_desa);
-                        desaAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-                        spDesa.setAdapter(desaAdapter);
+                        String kecamatan = jsonObject.optString("kecamatan");
+                        jenis_kecamatan.add(kecamatan);
+                        kecamatanAdapter = new ArrayAdapter<>(InputHarian.this, android.R.layout.simple_dropdown_item_1line, jenis_kecamatan);
+                        kecamatanAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+                        spKecamatan.setAdapter(kecamatanAdapter);
+                        spKecamatan.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                String selectedKec = spKecamatan.getSelectedItem().toString();
+                                jenis_desa.clear();
+                                String url2 = Constants.ROOT_URL + "Populate_Desa?kecamatan=" + selectedKec + "&kabupaten=" + userKab;
+                                JsonObjectRequest jsonObjectRequest2 = new JsonObjectRequest(Request.Method.GET, url2, null, new Response.Listener<JSONObject>() {
+                                    @Override
+                                    public void onResponse(JSONObject response) {
+                                        try {
+                                            JSONArray jsonArray = response.getJSONArray("lokasi");
+                                            for (int i = 0; i < jsonArray.length(); i++) {
+                                                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                                String desa = jsonObject.optString("desa");
+                                                jenis_desa.add(desa);
+                                                desaAdapter = new ArrayAdapter<>(InputHarian.this, android.R.layout.simple_dropdown_item_1line, jenis_desa);
+                                                desaAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+                                                spDesa.setAdapter(desaAdapter);
+                                            }
+                                        } catch (JSONException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }, new Response.ErrorListener() {
+                                    @Override
+                                    public void onErrorResponse(VolleyError error) {
+
+                                    }
+                                });
+                                requestQueue.add(jsonObjectRequest2);
+                            }
+
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {
+
+                            }
+                        });
                     }
 
                 } catch (JSONException e) {

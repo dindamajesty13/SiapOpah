@@ -1,7 +1,7 @@
 package com.majesty.siapopa;
 
 public class Constants {
-    public static final String ROOT_URL = "https://siapopajabar.info/";
+    public static final String ROOT_URL = "https://siapopa.com/";
 
     public static final String URL_LOGIN = ROOT_URL + "Login";
 

@@ -98,12 +98,12 @@ public class MainActivity extends AppCompatActivity {
                     String[] data = new String[2];
                     data[0] = username;
                     data[1] = password;
-                    PutData putData = new PutData(Constants.URL_LOGIN, "POST", field, data);
+                    PutData putData = new PutData("https://siapopa.com/Login", "POST", field, data);
                     if (putData.startPut()){
                         if (putData.onComplete()){
                             String result = putData.getResult();
                             if (result.contains("Login POPT Success")){
-                                String urlLaporan = Constants.ROOT_URL+"User?username="+phoneNumberEditText.getText().toString();
+                                String urlLaporan = "https://siapopa.com/User?username=" + MainActivity.this.phoneNumberEditText.getText().toString();
                                 StringRequest stringRequests = new StringRequest(Request.Method.GET, urlLaporan,
                                         new Response.Listener<String>() {
                                             @Override
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
 
                             }else if (result.contains("Login PKAB Success")){
-                                String urlLaporan = Constants.ROOT_URL+"User?username="+phoneNumberEditText.getText().toString();
+                                String urlLaporan = "https://siapopa.com/Kortikab?username=" + MainActivity.this.phoneNumberEditText.getText().toString();
                                 StringRequest stringRequests = new StringRequest(Request.Method.GET, urlLaporan,
                                         new Response.Listener<String>() {
                                             @Override
@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
 
                             } else if (result.contains("Login SatPel Success")){
 
-                                String urlprov = Constants.ROOT_URL+"User?username="+phoneNumberEditText.getText().toString();
+                                String urlprov = "https://siapopa.com/Satpel?username=" + MainActivity.this.phoneNumberEditText.getText().toString();
                                 StringRequest stringRequests = new StringRequest(Request.Method.GET, urlprov,
                                         new Response.Listener<String>() {
                                             @Override
@@ -249,7 +249,7 @@ public class MainActivity extends AppCompatActivity {
 
                             } else if (result.contains("Login PProv Success")){
 
-                                String urlprov = Constants.ROOT_URL+"User?username="+phoneNumberEditText.getText().toString();
+                                String urlprov = "https://siapopa.com/BPTPH?username=" + MainActivity.this.phoneNumberEditText.getText().toString();
                                 StringRequest stringRequests = new StringRequest(Request.Method.GET, urlprov,
                                         new Response.Listener<String>() {
                                             @Override
@@ -261,7 +261,6 @@ public class MainActivity extends AppCompatActivity {
 
                                                         String alamat = object.getString("provinsi");
                                                         String provinsi = object.getString("provinsi");
-                                                        String kabupaten = object.getString("kabupaten");
                                                         String id_user = object.getString("usergroup_id");
                                                         String nama = object.getString("nama");
 
@@ -271,7 +270,6 @@ public class MainActivity extends AppCompatActivity {
                                                         user.setAlamat(alamat);
                                                         user.setNama(nama);
                                                         user.setProvinsi(provinsi);
-                                                        user.setKabupaten(kabupaten);
                                                         Common.currentUser = user;
 
                                                         progressDialog.dismiss();
@@ -296,52 +294,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
 
-                            } else if (result.contains("Login Admin Success")){
-
-                                String urlLaporan = Constants.ROOT_URL+"User?username="+phoneNumberEditText.getText().toString();
-                                StringRequest stringRequests = new StringRequest(Request.Method.GET, urlLaporan,
-                                        new Response.Listener<String>() {
-                                            @Override
-                                            public void onResponse(String response) {
-                                                try {
-                                                    JSONArray array = new JSONArray(response);
-                                                    for (int i = 0; i<array.length(); i++){
-                                                        JSONObject object = array.getJSONObject(i);
-
-                                                        String alamat = object.getString("provinsi");
-                                                        String id_user = object.getString("usergroup_id");
-                                                        String nama = object.getString("nama");
-
-                                                        User user = new User();
-                                                        user.setUsername(phoneNumberEditText.getText().toString());
-                                                        user.setAlamat(alamat);
-                                                        user.setId_usergroup(id_user);
-                                                        user.setNama(nama);
-                                                        Common.currentUser = user;
-
-                                                        progressDialog.dismiss();
-                                                        Intent homepkab = new Intent(MainActivity.this, Home.class);
-                                                        homepkab.putExtra("HOME", "homeadmin");
-                                                        startActivity(homepkab);
-                                                        finish();
-
-                                                    }
-                                                }catch (Exception e){
-                                                    e.printStackTrace();
-                                                }
-
-                                            }
-                                        }, new Response.ErrorListener() {
-                                    @Override
-                                    public void onErrorResponse(VolleyError error) {
-                                        Toast.makeText(MainActivity.this, error.toString(), Toast.LENGTH_LONG).show();
-                                    }
-                                });
-                                Volley.newRequestQueue(MainActivity.this).add(stringRequests);
-                                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-
                             } else if (result.contains("Login Brigade Success")){
-                                String urlLaporan = Constants.ROOT_URL+"User?username="+phoneNumberEditText.getText().toString();
+                                String urlLaporan = "https://siapopa.com/Brigade?username=" + MainActivity.this.phoneNumberEditText.getText().toString();
                                 StringRequest stringRequests = new StringRequest(Request.Method.GET, urlLaporan,
                                         new Response.Listener<String>() {
                                             @Override
@@ -351,7 +305,6 @@ public class MainActivity extends AppCompatActivity {
                                                     for (int i = 0; i<array.length(); i++){
                                                         JSONObject object = array.getJSONObject(i);
 
-                                                        String alamat = object.getString("alamat");
                                                         String provinsi = object.getString("provinsi");
                                                         String kabupaten = object.getString("kabupaten");
                                                         String id_user = object.getString("usergroup_id");
@@ -359,7 +312,6 @@ public class MainActivity extends AppCompatActivity {
 
                                                         User user = new User();
                                                         user.setUsername(phoneNumberEditText.getText().toString());
-                                                        user.setAlamat(alamat);
                                                         user.setProvinsi(provinsi);
                                                         user.setKabupaten(kabupaten);
                                                         user.setId_usergroup(id_user);

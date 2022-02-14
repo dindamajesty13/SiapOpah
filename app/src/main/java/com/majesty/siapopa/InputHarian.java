@@ -230,7 +230,7 @@ public class InputHarian extends AppCompatActivity implements GoogleApiClient.Co
         requestQueue.add(jsonObjectRequest);
 
 
-        userAlamat = Common.currentUser.getAlamat();
+        userAlamat = Common.currentUser.getId_lokasi();
         userKab = Common.currentUser.getKabupaten();
         String url1 = Constants.ROOT_URL + "Populate_Kecamatan?kecamatan=" + userAlamat + "&kabupaten=" + userKab;
 

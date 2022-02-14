@@ -1,19 +1,28 @@
 package com.majesty.siapopa.model;
 
 public class User {
-    private String username, password, alamat, id_usergroup, provinsi, kabupaten, nama;
+    private String username, password, alamat, id_usergroup, provinsi, kabupaten, nama, id_lokasi;
 
     public User() {
     }
 
-    public User(String username, String password, String alamat, String id_usergroup, String provinsi, String kabupaten, String nama) {
+    public User(String username, String id_lokasi, String password, String alamat, String id_usergroup, String provinsi, String kabupaten, String nama) {
         this.username = username;
+        this.id_lokasi = id_lokasi;
         this.password = password;
         this.alamat = alamat;
         this.id_usergroup = id_usergroup;
         this.provinsi = provinsi;
         this.kabupaten = kabupaten;
         this.nama = nama;
+    }
+
+    public String getId_lokasi() {
+        return id_lokasi;
+    }
+
+    public void setId_lokasi(String id_lokasi) {
+        this.id_lokasi = id_lokasi;
     }
 
     public String getNama() {

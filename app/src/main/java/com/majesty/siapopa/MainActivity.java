@@ -114,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
                                                         JSONObject object = array.getJSONObject(i);
 
                                                         String alamat = object.getString("alamat");
+                                                        String id_lokasi = object.getString("id_lokasi");
                                                         String provinsi = object.getString("provinsi");
                                                         String kabupaten = object.getString("kabupaten");
                                                         String id_user = object.getString("usergroup_id");
@@ -122,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
                                                         User user = new User();
                                                         user.setUsername(phoneNumberEditText.getText().toString());
                                                         user.setAlamat(alamat);
+                                                        user.setId_lokasi(id_lokasi);
                                                         user.setProvinsi(provinsi);
                                                         user.setKabupaten(kabupaten);
                                                         user.setId_usergroup(id_user);
